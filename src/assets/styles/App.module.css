@@ -1,0 +1,333 @@
+/* Moved from src/App.module.css */
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #F5F5F5;
+  font-family: 'Inter', sans-serif;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #F0F0F0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  min-width: 320px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  margin-left: 0;
+}
+
+.headerTitle {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0,0,0,0.88);
+  line-height: 28px;
+  min-width: 57px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 0;
+}
+
+.sidebar {
+  width: 260px;
+  min-width: 200px;
+  max-width: 320px;
+  background: #fff; /* 改为白色 */
+  border-right: 1px solid #E6E6E6; /* 更浅的分割线 */
+  box-shadow: 2px 0 16px 0 rgba(30,30,30,0.06); /* 轻微阴影增强分区感 */
+  padding: 16px 0 0 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  height: 100%;
+  min-height: 0;
+  position: fixed;
+  top: 64px; /* header 高度 */
+  left: 0;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.sidebarInner {
+  padding: 0 16px 24px 16px;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: 24px 0;
+  background: #F5F5F5;
+  min-height: 0;
+  width: 100vw;
+  /* 移除 max-width 限制 */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+  margin-left: 260px; /* 主内容区左侧留出 sidebar 宽度 */
+}
+
+.mainInner {
+  width: 100%;
+  /* 移除 max-width 限制 */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+.statsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.statCard {
+  flex: 1;
+  border-radius: 8px;
+  min-height: 120px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 8px 40px 0 rgba(30,30,30,0.22), 0 2px 8px 0 rgba(0,0,0,0.18) !important;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  line-height: 24px;
+  text-align: left;
+}
+
+.valueRow {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(0,0,0,0.88);
+}
+
+.percent {
+  background: #F6FFED;
+  border: 1px solid #B7EB8F;
+  border-radius: 4px;
+  color: #52C41A;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.percentIcon {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.activityCard {
+  border-radius: 8px;
+  min-height: 300px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-shadow: 0 8px 40px 0 rgba(30,30,30,0.22), 0 2px 8px 0 rgba(0,0,0,0.18) !important;
+}
+
+.tableCard {
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 0;
+  box-shadow: 0 8px 40px 0 rgba(30,30,30,0.22), 0 2px 8px 0 rgba(0,0,0,0.18) !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.tableHeader {
+  display: flex;
+  flex-direction: row;
+  background: #FAFAFA;
+  border-radius: 8px 8px 0 0;
+  align-items: center;
+  font-weight: 600;
+  color: rgba(0,0,0,0.88);
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 0 0 16px;
+  height: 56px;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0,0,0,0.88);
+  padding: 0 0 0 16px;
+  height: 56px;
+}
+
+.rightbarCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quickCard, .notifyCard {
+  border-radius: 8px;
+  padding: 25px;
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  width: 100%;
+  box-shadow: 0 8px 40px 0 rgba(30,30,30,0.22), 0 2px 8px 0 rgba(0,0,0,0.18) !important;
+}
+
+.notifyMsg {
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  min-height: 57px;
+  padding-left: 16px;
+  padding-top: 7.5px;
+  display: flex;
+  align-items: center;
+  color: rgba(0,0,0,0.88);
+  line-height: 20px;
+  text-align: left;
+}
+
+.menuDashboard {
+  background: #E6F4FF !important;
+  color: #1677FF !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  margin-bottom: 0 !important;
+  height: 40px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+.menuItem {
+  height: 40px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+@media (max-width: 1600px) {
+  .mainInner {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    margin-left: 200px;
+  }
+  .sidebar {
+    width: 200px;
+  }
+  .mainInner {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    margin-left: 60px;
+  }
+  .sidebar {
+    width: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin-left: 0;
+    padding-top: 80px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .header {
+    min-width: 0;
+    padding: 0 4px;
+  }
+  .mainInner {
+    padding: 0 2px;
+    gap: 12px;
+  }
+  .statCard, .activityCard, .tableCard, .quickCard, .notifyCard {
+    padding: 12px;
+    min-height: 80px;
+    font-size: 13px;
+  }
+  .tableHeader, .tableRow {
+    height: 40px;
+    font-size: 12px;
+    padding-left: 4px;
+  }
+}
