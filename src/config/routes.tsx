@@ -4,6 +4,7 @@ import AllSpecifications from '../pages/AllSpecifications';
 import MySpecifications from '../pages/MySpecifications';
 import Published from '../pages/Published';
 import PendingReview from '../pages/PendingReview';
+import ChangeDetail from '../pages/ChangeDetail';
 import type { RouteObject } from 'react-router-dom';
 
 const routes: RouteObject[] = [
@@ -34,6 +35,10 @@ const routes: RouteObject[] = [
       {
         path: 'pending-review',
         element: <PendingReview />,
+      },
+      {
+        path: 'change-detail/:id',
+        element: <ChangeDetail />,
       },
     ],
   },

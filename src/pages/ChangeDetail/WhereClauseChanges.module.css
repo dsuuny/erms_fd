@@ -1,0 +1,29 @@
+.whereClauseContainer {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+}
+.whereCard {
+  background: #FAFFF5;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  padding: 13px;
+  width: 498px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.currentCard {
+  background: #F9FAFB;
+}
+.sqlText {
+  font-family: 'Noto Sans Mono', 'Consolas', monospace;
+  color: #222;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-line;
+}
+.label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}

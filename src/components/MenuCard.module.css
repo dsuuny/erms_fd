@@ -1,0 +1,29 @@
+.menuCard {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background: #fff;
+  overflow: hidden;
+}
+.menuBar {
+  background: #f5f5f5 !important;
+  border-bottom: 1px solid #e5e6eb !important;
+  border-radius: 8px 8px 0 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0 12px 0;
+  color: #222;
+}
+:global(.ant-menu-horizontal) {
+  background: #f5f5f5 !important;
+}
+:global(.ant-menu-item) {
+  color: #595959 !important;
+}
+:global(.ant-menu-item-selected) {
+  background: #e5e6eb !important;
+  color: #222 !important;
+}

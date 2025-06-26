@@ -1,0 +1,73 @@
+.joinConfigContainer {
+  display: flex;
+  gap: 0;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  margin: 0 0 16px 0;
+  overflow: hidden;
+}
+.joinCol {
+  flex: 1;
+  padding: 24px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #fff;
+}
+.colHeader {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #222;
+}
+.diffBlock {
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-left: 6px solid transparent;
+  background: #fff;
+}
+.removed {
+  border-left-color: #ff7875;
+  background: #fff1f0;
+}
+.added {
+  border-left-color: #95de64;
+  background: #f6ffed;
+}
+.modified {
+  border-left-color: #ffe58f;
+  background: #fffbe6;
+}
+.typeChange {
+  border-left-color: #69c0ff;
+  background: #e6f7ff;
+  margin-top: 16px;
+  margin-bottom: 0;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  grid-column: 1 / -1;
+  display: block;
+}
+.diffTitle {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+.diffText {
+  font-family: 'Noto Sans Mono', 'Consolas', monospace;
+  font-size: 15px;
+  color: #222;
+  white-space: pre-line;
+}
+.icon {
+  font-size: 16px;
+  vertical-align: middle;
+}
