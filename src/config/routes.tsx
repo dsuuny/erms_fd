@@ -5,6 +5,7 @@ import MySpecifications from '../pages/MySpecifications';
 import Published from '../pages/Published';
 import PendingReview from '../pages/PendingReview';
 import ChangeDetail from '../pages/ChangeDetail';
+import ETLTableEdition from '../pages/ETLTableEdition';
 import type { RouteObject } from 'react-router-dom';
 
 const routes: RouteObject[] = [
@@ -39,6 +40,10 @@ const routes: RouteObject[] = [
       {
         path: 'change-detail/:id',
         element: <ChangeDetail />,
+      },
+      {
+        path: 'etl-table-edition',
+        element: <ETLTableEdition />,
       },
     ],
   },

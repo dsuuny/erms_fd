@@ -1,0 +1,113 @@
+.page {
+    padding: 24px;
+    background-color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0 rgba(30,30,30,0.06);
+    margin-bottom: 24px;
+}
+
+.fieldsConfig {
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #F0F0F0;
+}
+
+.fieldsGridHeader {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.5fr 3fr 0.5fr;
+    padding: 12px 24px;
+    background: #FAFAFA;
+    border-bottom: 1px solid #F0F0F0;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0,0,0,0.88);
+    gap: 16px;
+}
+
+.fieldsGridRow {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.5fr 3fr 0.5fr;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #F0F0F0;
+    gap: 16px;
+}
+
+.rowNumber {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.addFieldFooter {
+    padding: 16px 24px;
+}
+
+.validationItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.node {
+    padding: 8px 16px;
+    border-radius: 0;
+    text-align: center;
+    min-width: 120px;
+}
+
+.targetNode {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+    color: #1890ff;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.sourceNode {
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    padding: 8px 16px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.connector {
+    width: 1px;
+    height: 20px;
+    background-color: #bfbfbf;
+    margin: 4px 0;
+}
+
+.node-group {
+    display: flex;
+    gap: 16px;
+}
