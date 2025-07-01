@@ -22,6 +22,10 @@ const routes: RouteObject[] = [
         element: <Dashboard />,
       },
       {
+        path: 'change-detail',
+        element: <ChangeDetail/>,
+      },
+      {
         path: 'all-specifications',
         element: <AllSpecifications />,
       },
