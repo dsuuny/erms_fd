@@ -6,9 +6,19 @@ import Published from '../pages/Published';
 import PendingReview from '../pages/PendingReview';
 import ChangeDetail from '../pages/ChangeDetail';
 import ETLTableEdition from '../pages/ETLTableEdition';
+import LoginPage from '../pages/Login';
+import RegisterPage from '../pages/Register';
 import type { RouteObject } from 'react-router-dom';
 
 const routes: RouteObject[] = [
+  {
+    path: '/login',
+    element: <LoginPage />,
+  },
+  {
+    path: '/register',
+    element: <RegisterPage />,
+  },
   {
     path: '/',
     element: <Layout />,

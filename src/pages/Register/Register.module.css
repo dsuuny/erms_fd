@@ -1,0 +1,123 @@
+.loginPage {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.leftPanel {
+  background-color: #2f54eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.leftPanelContent {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 40px;
+}
+
+.title {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 48px !important;
+  margin-bottom: 10px !important;
+}
+
+.subtitle {
+  color: #ffffff !important;
+  font-size: 18px !important;
+}
+
+.rightPanel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginFormContainer {
+  width: 400px;
+  padding: 40px;
+}
+
+.formTitle {
+  text-align: left;
+  margin-bottom: 10px !important;
+  font-weight: bold;
+  font-size: 32px !important;
+}
+
+.formSubtitle {
+  text-align: left;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.loginForm {
+  width: 100%;
+}
+
+.loginButton {
+  width: 100%;
+}
+
+.orSeparator {
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.orSeparator::before,
+.orSeparator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 20px);
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.orSeparator::before {
+  left: 0;
+}
+
+.orSeparator::after {
+  right: 0;
+}
+
+.orText {
+  background-color: #ffffff;
+  padding: 0 10px;
+  color: #8c8c8c;
+}
+
+.registerNow {
+  text-align: center;
+}
+
+.roleSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.roleButton {
+  background-color: #f0f0f0;
+  border: 1px solid #d9d9d9;
+  color: #595959;
+}
+
+.roleButton.selected {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+  color: #1890ff;
+}
